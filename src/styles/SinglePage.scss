@@ -1,0 +1,32 @@
+
+.singlePage {
+    margin-inline: auto;
+    width: 60%;
+
+    background: linear-gradient(
+        25deg,
+        var(--background-color-second) 75%,
+        rgba(255, 255, 255, 0) 87%
+    ) !important;
+    padding: 0 3rem;
+    padding-bottom: 3rem;
+    @media screen and (max-width: 1150px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 768px) {
+        width: calc(90% - 2rem);
+    }
+}
+:global(.header-link) {
+	opacity: 0;
+	transition: opacity 0.2s;
+	margin-left: 0.5em;
+}
+
+:global(h2:hover .header-link),
+:global(h3:hover .header-link),
+:global(h4:hover .header-link),
+:global(h5:hover .header-link),
+:global(h6:hover .header-link) {
+	opacity: 1;
+}
