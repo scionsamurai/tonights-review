@@ -6,7 +6,7 @@
     let theme = localStorage.getItem('color-scheme');
     let giscusAttributes = {
       src: 'https://giscus.app/client.js',
-      'data-repo': 'scionsamurai/jimscode.github.io',
+      'data-repo': 'scionsamurai/tonights-review',
       'data-repo-id': 'R_kgDOK8_rSw',
       'data-category': 'Announcements',
       'data-category-id': 'DIC_kwDOK8_rS84Cb9LP',

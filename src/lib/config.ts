@@ -1,9 +1,9 @@
 import { dev } from '$app/environment'
 
-export const siteName = 'JimsCode'
+export const siteName = 'TonightsReview'
 export const description = 'SvelteKit blog for poets'
-export const url = dev ? 'http://localhost:5173/' : 'https://www.jimscode.blog/'
-export const email = "admin@jimscode.blog"
+export const url = dev ? 'http://localhost:5173/' : 'https://www.tonightsreview.com/'
+export const email = "admin@tonightsreview.com"
 
 
 export let createSlug = (blogTitle) => {

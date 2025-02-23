@@ -8,7 +8,7 @@
 		<div class="footer-section">
 			<h4 class="dont-link">About</h4>
 			<p>
-				Embark on a coding journey with Jims Code Blog - your go-to destination for insightful
+				Embark on a coding journey with Tonights Review - your go-to destination for insightful
 				tutorials, innovative projects, and the latest trends in the dynamic world of software
 				development.
 			</p>

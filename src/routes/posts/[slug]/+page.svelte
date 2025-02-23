@@ -15,8 +15,8 @@
 	export let data
 
     const githubLink = data.meta.group 
-        ? `https://github.com/scionsamurai/jimscode.github.io/tree/main/src/posts/${data.meta.group}/${data.slug}/${data.slug}.md`
-        : `https://github.com/scionsamurai/jimscode.github.io/tree/main/src/posts/${data.slug}/${data.slug}.md`
+        ? `https://github.com/scionsamurai/tonights-review/tree/main/src/posts/${data.meta.group}/${data.slug}/${data.slug}.md`
+        : `https://github.com/scionsamurai/tonights-review/tree/main/src/posts/${data.slug}/${data.slug}.md`
 
 
 	onMount(() => {

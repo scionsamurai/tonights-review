@@ -1,8 +1,8 @@
-# Jim's Code Blog
+# Tonights Review Blog
 
-Welcome to Jim's Code Blog repository! 🚀
+Welcome to Tonights Review Blog repository! 🚀
 
-Explore the art and science of coding with Jimmy, a passionate coder specializing in languages like Rust, Python and Javascript. Jim's Code Blog is a dynamic space where creativity meets functionality. We share coding tutorials, insights into specific technologies, and discuss emerging industry trends.
+Explore the art and science of coding with Jimmy, a passionate coder specializing in languages like Rust, Python and Javascript. Tonights Review Blog is a dynamic space where creativity meets functionality. We share coding tutorials, insights into specific technologies, and discuss emerging industry trends.
 
 ## Author
 
@@ -12,7 +12,7 @@ Explore the art and science of coding with Jimmy, a passionate coder specializin
 - Enjoys working with technologies like Docker, Ansible, and Linux.
 - Committed to simplifying coding concepts and inspiring fellow developers.
 
-## About Jim's Code Blog
+## About Tonights Review Blog
 
 Discover a variety of content, from in-depth tutorials and project experiences to discussions on coding challenges. Jim enjoys creating and hosting mini applications, offering practical examples and learning resources for fellow coding enthusiasts.
 
@@ -32,12 +32,12 @@ Your insights and experiences contribute to the collective learning of the codin
 
 ## Philosophy and Approach
 
-Jim believes in continuous learning, best practices, and a problem-solving approach. Through Jim's Code Blog, the aim is to simplify coding concepts and inspire fellow developers on their coding journey.
+Jim believes in continuous learning, best practices, and a problem-solving approach. Through Tonights Review Blog, the aim is to simplify coding concepts and inspire fellow developers on their coding journey.
 
 ## Disclaimer
 
 While Jim strives for accuracy, readers are encouraged to conduct their own research and exercise caution, especially in practical applications of coding advice shared on the blog.
 
-Check out the site at [jimscode.blog](https://www.jimscode.blog)! 🌐
+Check out the site at [tonightsreview.com](https://www.tonightsreview.com)! 🌐
 
 **Happy coding!** 🚀👨‍💻

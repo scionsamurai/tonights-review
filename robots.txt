@@ -3,4 +3,4 @@ Disallow: /static/examples/
 
 User-agent: *
 
-Sitemap: https://www.jimscode.blog/sitemap.xml
+Sitemap: https://www.tonightsreview.com/sitemap.xml
