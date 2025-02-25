@@ -1,8 +1,8 @@
-# Tonights Review Blog
+# Tonights Review
 
-Welcome to Tonights Review Blog repository! 🚀
+Welcome to Tonights Review repository! 🚀
 
-Explore the art and science of coding with Jimmy, a passionate coder specializing in languages like Rust, Python and Javascript. Tonights Review Blog is a dynamic space where creativity meets functionality. We share coding tutorials, insights into specific technologies, and discuss emerging industry trends.
+Explore the art and science of coding with Jimmy, a passionate coder specializing in languages like Rust, Python and Javascript. Tonights Review is a dynamic space where creativity meets functionality. We share coding tutorials, insights into specific technologies, and discuss emerging industry trends.
 
 ## Author
 
@@ -12,7 +12,7 @@ Explore the art and science of coding with Jimmy, a passionate coder specializin
 - Enjoys working with technologies like Docker, Ansible, and Linux.
 - Committed to simplifying coding concepts and inspiring fellow developers.
 
-## About Tonights Review Blog
+## About Tonights Review
 
 Discover a variety of content, from in-depth tutorials and project experiences to discussions on coding challenges. Jim enjoys creating and hosting mini applications, offering practical examples and learning resources for fellow coding enthusiasts.
 
@@ -32,7 +32,7 @@ Your insights and experiences contribute to the collective learning of the codin
 
 ## Philosophy and Approach
 
-Jim believes in continuous learning, best practices, and a problem-solving approach. Through Tonights Review Blog, the aim is to simplify coding concepts and inspire fellow developers on their coding journey.
+Jim believes in continuous learning, best practices, and a problem-solving approach. Through Tonights Review, the aim is to simplify coding concepts and inspire fellow developers on their coding journey.
 
 ## Disclaimer
 
