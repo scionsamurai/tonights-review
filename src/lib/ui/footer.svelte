@@ -25,10 +25,10 @@
 			<li><a href="/terms-of-service">Terms of Service</a></li>
 		</ul>
 		<p class="footer-disclaimer">
-			<strong>Disclaimer:</strong> The information provided on this blog is for educational and informational
-			purposes related to coding and software development. We do not guarantee the accuracy, completeness,
-			or reliability of any information presented. Readers are encouraged to conduct their own research,
-			practice due diligence, and consult with professionals for coding-related decisions and implementation.
+			<strong>Disclaimer:</strong> The content on this blog is provided for educational and informational
+			purposes only. While we strive for accuracy, we make no guarantees about the completeness or 
+			reliability of the information presented. Readers should verify information independently and
+			seek professional advice when needed.
 		</p>
 
 		<p class="footer-bottom">{config.siteName} &copy {new Date().getFullYear()}</p>
