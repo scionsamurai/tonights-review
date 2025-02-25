@@ -8,9 +8,8 @@
 		<div class="footer-section">
 			<h4 class="dont-link">About</h4>
 			<p>
-				Welcome to Tonights Review - where we share practical coding tutorials, 
-				development tips, and explore modern software engineering practices to help
-				you become a better developer.
+				Welcome to Tonights Review - your trusted source for comprehensive product reviews,
+				honest opinions, and in-depth analysis to help you make informed decisions.
 			</p>
 		</div>
 		<div class="footer-section">
@@ -25,9 +24,9 @@
 			<li><a href="/terms-of-service">Terms of Service</a></li>
 		</ul>
 		<p class="footer-disclaimer">
-			<strong>Disclaimer:</strong> All content is provided for educational purposes only. While we 
-			strive for accuracy, we cannot guarantee the completeness or reliability of the information. 
-			Readers should verify and test code examples independently and seek professional guidance when needed.
+			<strong>Disclaimer:</strong> All content is provided for informational purposes only. While we 
+			strive for accuracy in our reviews, we cannot guarantee the completeness or reliability of the information. 
+			Product experiences may vary, and readers should conduct their own research before making purchase decisions.
 		</p>
 
 		<p class="footer-bottom">{config.siteName} &copy {new Date().getFullYear()}</p>
