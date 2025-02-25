@@ -1,30 +1,63 @@
 # Terms of Service
 
-Welcome to tonightsreview.com! These terms and conditions outline the rules and regulations for the use of our website, located at [https://www.tonightsreview.com](https://www.tonightsreview.com). By accessing this website, we assume you accept these terms and conditions. Do not continue to use tonightsreview.com if you do not agree to all the terms and conditions stated on this page.
+Welcome to Tonightsreview! These terms and conditions outline the rules and regulations for the use of our review website, located at [https://www.tonightsreview.com](https://www.tonightsreview.com). By accessing this website, we assume you accept these terms and conditions. Do not continue to use Tonightsreview if you do not agree to all the terms and conditions stated on this page.
 
-## 1. Commenting Policy
-- Users are welcome to engage in discussions by posting comments on the blog posts.
-- All comments must adhere to community standards, and any content deemed inappropriate, offensive, or spammy will be removed.
-- tonightsreview.com reserves the right to moderate and delete comments that violate these standards without prior notice.
+## 1. Review and Comment Policy
+- Users are welcome to engage in discussions by posting comments on reviews and content.
+- Reviews and comments must be constructive and respectful of creators and other users.
+- All content must adhere to community standards - inappropriate, offensive, or spammy content will be removed.
+- Tonightsreview reserves the right to moderate and remove any content that violates these standards.
+- Reviews should be based on actual experience with the content being reviewed.
 
-## 2. Intellectual Property
-- The content published on tonightsreview.com, including but not limited to text, images, code snippets, and other multimedia elements, is the property of tonightsreview.com and is protected by applicable copyright and intellectual property laws.
-- Readers are granted a limited, non-exclusive, and non-transferable license to access and use the content solely for personal and non-commercial purposes.
+## 2. Content Guidelines
+- Reviews should be honest and unbiased.
+- Personal attacks or harassment will not be tolerated.
+- Spoilers should be properly marked and tagged.
+- Content ratings and trigger warnings should be respected.
+- False or misleading information about reviewed content is prohibited.
 
-## 3. Third-Party Links
-- tonightsreview.com may contain links to third-party websites or services that are not owned or controlled by us. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.
+## 3. Intellectual Property
+- The content published on Tonightsreview, including reviews, analysis, images, and other multimedia elements, is the property of Tonightsreview and is protected by copyright laws.
+- Users retain rights to their submitted reviews and comments but grant Tonightsreview a license to display and use this content.
+- Fair use of reviewed content (such as screenshots or short clips) must comply with copyright laws.
 
-## 4. Affiliate Links and Advertising
-- tonightsreview.com may use affiliate links and display advertisements. Clicking on affiliate links may result in earning a commission for tonightsreview.com.
-- Advertisements displayed on the site are not endorsements of the products or services advertised. Users are encouraged to perform their own due diligence before making any purchase based on advertisements or affiliate links.
+## 4. Third-Party Content
+- Tonightsreview may contain links to third-party websites or services.
+- Reviews may reference external content not owned by Tonightsreview.
+- We are not responsible for third-party content accuracy or availability.
+- Users access third-party content at their own risk.
 
-## 5. Limitation of Liability
-- tonightsreview.com and its contributors will not be liable for any direct, indirect, incidental, consequential, or exemplary damages resulting from the use of the website or the information provided on the website.
+## 5. Affiliate Links and Advertising
+- Reviews may contain affiliate links to reviewed products or services.
+- Clicking affiliate links may earn Tonightsreview a commission.
+- Our reviews maintain editorial independence regardless of affiliate relationships.
+- Advertisements are clearly marked and not endorsements.
 
-## 6. Changes to Terms of Service
-- tonightsreview.com reserves the right to modify these terms of service at any time without prior notice. Changes will be effective immediately upon posting on the website. Continued use of the website after any modifications shall constitute your consent to such changes.
+## 6. Review Ratings and Scores
+- Review scores are subjective opinions of our reviewers.
+- Rating criteria are transparent and consistently applied.
+- Scores may be updated to reflect changes in reviewed content.
+- User ratings and comments may affect overall review scores.
 
-## 7. Governing Law
-- These terms and conditions are governed by and construed in accordance with the laws of the United States, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.
+## 7. User Accounts and Privacy
+- Users may need accounts to submit reviews or comments.
+- Account information must be accurate and current.
+- Users are responsible for maintaining account security.
+- Privacy practices are detailed in our Privacy Policy.
 
-By using tonightsreview.com, you agree to abide by these terms and conditions. If you have any questions or concerns about these terms, please contact us at [admin@tonightsreview.com](mailto:admin@tonightsreview.com).
+## 8. Content Removal and Appeals
+- Users may request removal of their reviews or comments.
+- Content violating our policies will be removed.
+- Appeals for removed content can be submitted for review.
+- Final moderation decisions rest with Tonightsreview.
+
+## 9. Changes to Terms
+- Tonightsreview may update these terms without notice.
+- Changes are effective immediately upon posting.
+- Continued use constitutes acceptance of updated terms.
+
+## 10. Governing Law
+- These terms are governed by United States law.
+- Users submit to exclusive jurisdiction of U.S. courts.
+
+For questions about these terms, contact us at [legal@tonightsreview.com](mailto:legal@tonightsreview.com).
