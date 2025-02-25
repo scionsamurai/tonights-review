@@ -8,9 +8,9 @@
 		<div class="footer-section">
 			<h4 class="dont-link">About</h4>
 			<p>
-				Embark on a coding journey with Tonights Review - your go-to destination for insightful
-				tutorials, innovative projects, and the latest trends in the dynamic world of software
-				development.
+				Welcome to Tonights Review - where we share practical coding tutorials, 
+				development tips, and explore modern software engineering practices to help
+				you become a better developer.
 			</p>
 		</div>
 		<div class="footer-section">
@@ -25,10 +25,9 @@
 			<li><a href="/terms-of-service">Terms of Service</a></li>
 		</ul>
 		<p class="footer-disclaimer">
-			<strong>Disclaimer:</strong> The information provided on this blog is for educational and informational
-			purposes related to coding and software development. We do not guarantee the accuracy, completeness,
-			or reliability of any information presented. Readers are encouraged to conduct their own research,
-			practice due diligence, and consult with professionals for coding-related decisions and implementation.
+			<strong>Disclaimer:</strong> All content is provided for educational purposes only. While we 
+			strive for accuracy, we cannot guarantee the completeness or reliability of the information. 
+			Readers should verify and test code examples independently and seek professional guidance when needed.
 		</p>
 
 		<p class="footer-bottom">{config.siteName} &copy {new Date().getFullYear()}</p>
