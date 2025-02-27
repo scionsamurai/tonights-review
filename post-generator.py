@@ -49,18 +49,124 @@ def generate_blog_suggestions(reviews_markdown, summaries):
         temperature=0.7,
         messages=[{
             "role": "user",
-            "content": f"""Based on these user reviews and previous context, suggest 5 blog post topics that address questions or concerns expressed by the reviewers.
+            "content": f"""Based on these user reviews and previous context, suggest 10 blog post topics that address questions or concerns expressed by the reviewers.
 
 {context}
 
 Reviews:
 {reviews_markdown}
 
-Generate 5 blog post suggestions in this format:
+Generate 10 blog post suggestions in this format:
 1. [Question/Title]
    Brief explanation of why this topic matters to viewers
 
 Each suggestion should be a question that viewers would want answered based on the reviews."""
+        }]
+    )
+    
+    suggestions = str(message.content[0].text)
+    
+    # Parse suggestions into a list
+    suggestion_list = []
+    current_suggestion = []
+    
+    for line in suggestions.split('\n'):
+        if line.strip().startswith(tuple('123456789')):
+            if current_suggestion:
+                suggestion_list.append('\n'.join(current_suggestion))
+                current_suggestion = []
+            current_suggestion.append(line.strip())
+        elif line.strip():
+            current_suggestion.append(line.strip())
+    
+    if current_suggestion:
+        suggestion_list.append('\n'.join(current_suggestion))
+    
+    return suggestion_list
+
+def get_user_selection(suggestions):
+    """Display suggestions and get user selection"""
+    print("\nBlog post suggestions:")
+    for i, suggestion in enumerate(suggestions, 1):
+        print(f"\n{suggestion}")
+    
+    while True:
+        try:
+            selection = int(input("\nSelect a blog post number (1-10): "))
+            if 1 <= selection <= 10:
+                return selection, suggestions[selection - 1]
+            print("Please enter a number between 1 and 10")
+        except ValueError:
+            print("Please enter a valid number")
+
+def extract_relevant_content(reviews_markdown, selected_topic):
+    """Extract relevant content from reviews for the selected topic"""
+    client = Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
+    
+    message = client.messages.create(
+        model="claude-3-5-sonnet-20241022",
+        max_tokens=4096,
+        temperature=0.7,
+        messages=[{
+            "role": "user",
+            "content": f"""Given this selected blog topic:
+
+{selected_topic}
+
+Please analyze these reviews and extract the most relevant details, opinions, and insights that relate to this topic. Compose them into 2-3 coherent paragraphs that we can use as source material for the blog post:
+
+{reviews_markdown}"""
+        }]
+    )
+    
+    return str(message.content[0].text)
+
+def generate_blog_outline(topic, extracted_content):
+    """Generate a detailed blog post outline"""
+    client = Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
+    
+    message = client.messages.create(
+        model="claude-3-5-sonnet-20241022",
+        max_tokens=4096,
+        temperature=0.7,
+        messages=[{
+            "role": "user",
+            "content": f"""Create a detailed outline for a blog post addressing this topic:
+
+{topic}
+
+Using these extracted insights from user reviews:
+
+{extracted_content}
+
+Generate an outline with main sections and key points to cover in each section."""
+        }]
+    )
+    
+    return str(message.content[0].text)
+
+def generate_blog_post(topic, outline, extracted_content):
+    """Generate the final blog post"""
+    client = Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
+    
+    message = client.messages.create(
+        model="claude-3-5-sonnet-20241022",
+        max_tokens=4096,
+        temperature=0.7,
+        messages=[{
+            "role": "user",
+            "content": f"""Write a comprehensive blog post following this outline:
+
+{outline}
+
+Use these extracted insights from user reviews as source material:
+
+{extracted_content}
+
+The blog post should address this topic:
+{topic}
+
+Write in a clear, engaging style with proper formatting and structure."""
         }]
     )
     
@@ -94,11 +200,29 @@ def main():
     print("\nGenerating blog post suggestions...")
     suggestions = generate_blog_suggestions(reviews_markdown, summaries)
     
-    # Save suggestions to file
-    with open('blog_suggestions.md', 'w') as f:
-        f.write(suggestions)
+    # Get user selection
+    selection_num, selected_topic = get_user_selection(suggestions)
     
-    print("\nBlog post suggestions have been saved to blog_suggestions.md")
+    # Extract relevant content
+    print("\nExtracting relevant content from reviews...")
+    extracted_content = extract_relevant_content(reviews_markdown, selected_topic)
+    
+    # Generate outline
+    print("\nGenerating blog post outline...")
+    outline = generate_blog_outline(selected_topic, extracted_content)
+    print("\nBlog Post Outline:")
+    print(outline)
+    
+    # Generate final blog post
+    print("\nGenerating final blog post...")
+    blog_post = generate_blog_post(selected_topic, outline, extracted_content)
+    
+    # Save the blog post
+    filename = f"blog_post_{selection_num}.md"
+    with open(filename, 'w') as f:
+        f.write(blog_post)
+    
+    print(f"\nBlog post has been saved to {filename}")
     return 0
 
 if __name__ == '__main__':
