@@ -91,10 +91,7 @@ def get_user_selection(suggestions):
         print(f"\n{suggestion}")
     
     print("\nEnter your chosen blog topic (you can copy/paste a suggestion or write your own):")
-    selected_text = input().strip()
-    
-    # Return a sequential number and the user's input
-    return len(suggestions) + 1, selected_text
+    return input().strip()
 
 def extract_relevant_content(reviews_markdown, selected_topic):
     """Extract relevant content from reviews for the selected topic"""
@@ -141,6 +138,40 @@ Generate an outline with main sections and key points to cover in each section."
     )
     
     return str(message.content[0].text)
+
+def generate_frontmatter(title):
+    """Generate frontmatter for the blog post"""
+    from datetime import datetime
+    import re
+    
+    # Convert title to slug for images
+    slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+    
+    # Generate the frontmatter
+    return f"""---
+title: {title}
+description: TODO - Add description
+date: '{datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S GMT")}'
+categories:
+  - TODO
+author_id: 1
+image: /images/{slug}-banner-png.png
+webp_image: /images/{slug}-banner.webp
+image_thumb: /images/{slug}-banner-png_thumb.png
+banner_alt: TODO - Add alt text
+show_banner: true
+comments: true
+published: true
+---
+
+"""
+
+def get_safe_filename(title):
+    """Convert title to safe filename"""
+    import re
+    # Convert to lowercase and replace non-alphanumeric chars with hyphens
+    safe_name = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+    return f"{safe_name}.md"
 
 def generate_blog_post(topic, outline, extracted_content):
     """Generate the final blog post"""
@@ -198,7 +229,7 @@ def main():
     suggestions = generate_blog_suggestions(reviews_markdown, summaries)
     
     # Get user selection
-    selection_num, selected_topic = get_user_selection(suggestions)
+    selected_topic = get_user_selection(suggestions)
     
     # Extract relevant content
     print("\nExtracting relevant content from reviews...")
@@ -214,9 +245,15 @@ def main():
     print("\nGenerating final blog post...")
     blog_post = generate_blog_post(selected_topic, outline, extracted_content)
     
-    # Save the blog post
-    filename = f"blog_post_{selection_num}.md"
+    # Create posts directory if it doesn't exist
+    os.makedirs('posts', exist_ok=True)
+    
+    # Generate frontmatter and save the blog post
+    frontmatter = generate_frontmatter(selected_topic)
+    filename = os.path.join('posts', get_safe_filename(selected_topic))
+    
     with open(filename, 'w') as f:
+        f.write(frontmatter)
         f.write(blog_post)
     
     print(f"\nBlog post has been saved to {filename}")
