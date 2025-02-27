@@ -87,17 +87,19 @@ Each suggestion should be a question that viewers would want answered based on t
 def get_user_selection(suggestions):
     """Display suggestions and get user selection"""
     print("\nBlog post suggestions:")
-    for i, suggestion in enumerate(suggestions, 1):
+    for suggestion in suggestions:
         print(f"\n{suggestion}")
     
+    print("\nPlease copy and paste your chosen suggestion (use CTRL+SHIFT+C to copy, CTRL+SHIFT+V to paste):")
     while True:
-        try:
-            selection = int(input("\nSelect a blog post number (1-10): "))
-            if 1 <= selection <= 10:
-                return selection, suggestions[selection - 1]
-            print("Please enter a number between 1 and 10")
-        except ValueError:
-            print("Please enter a valid number")
+        selected_text = input().strip()
+        
+        # Find the suggestion that matches the user's input
+        for i, suggestion in enumerate(suggestions, 1):
+            if selected_text in suggestion:
+                return i, suggestion
+        
+        print("\nCouldn't find that suggestion. Please copy and paste the exact suggestion text:")
 
 def extract_relevant_content(reviews_markdown, selected_topic):
     """Extract relevant content from reviews for the selected topic"""
