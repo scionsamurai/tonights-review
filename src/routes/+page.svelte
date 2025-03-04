@@ -12,7 +12,7 @@
 	<title>{config.siteName}</title>
 </svelte:head>
 
-<Banner h1_text="Welcome!" p_text="Discover tips and tricks to aid you on your coding adventure!" />
+<Banner h1_text="Welcome!" p_text="Honest opinions and thoughtful insights on everything worth your attention." />
 
  <PostSection posts={posts} />
 

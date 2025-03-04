@@ -161,7 +161,7 @@ image_thumb: /images/{slug}-banner-png_thumb.png
 banner_alt: TODO - Add alt text
 show_banner: true
 comments: true
-published: true
+published: false
 ---
 
 """
